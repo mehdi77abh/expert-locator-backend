@@ -14,7 +14,7 @@ let professorsData;
 try {
     professorsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'final.json'), 'utf-8'));
 } catch (error) {
-    console.error('Error reading professors.json:', error);
+    console.error('Error reading final.json:', error);
     process.exit(1); // اگر فایل خوانده نشود، سرور متوقف می‌شود
 }
 
